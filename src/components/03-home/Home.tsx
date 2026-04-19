@@ -27,7 +27,7 @@ const Home = () => {
     return (
         <div className="Home">
             <Title title="Home" />
-            <input placeholder='Enter a word in English...' onChange={displayDefinition} />
+            <input value={word} placeholder='Enter a word in English...' onChange={displayDefinition} />
             <button onClick={getDefinition}>Define</button>
             {definition.map((def, index) => (
                 <Definition key={index} definition={def} />
