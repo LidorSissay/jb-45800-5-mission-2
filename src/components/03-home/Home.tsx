@@ -4,6 +4,7 @@ import './Home.css'
 import definitionService from '../../service/definitionService'
 import type MeaningsModel from '../../models/MeaningsModel'
 import Definition from '../09-definition/Definition'
+import historyService from '../../service/historyService'
 
 const Home = () => {
     const [definition, setDefinition] = useState<MeaningsModel[]>([])
@@ -12,6 +13,10 @@ const Home = () => {
         try {
             const definition = await definitionService.getDefinition(word)
             setDefinition(definition)
+            historyService.saveHistory({
+                time: new Date().toLocaleString(),
+                word: word
+            })
         } catch (e) {
             alert(e)
         }
