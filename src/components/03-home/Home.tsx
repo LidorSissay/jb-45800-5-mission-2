@@ -5,8 +5,8 @@ const Home = () => {
     return (
         <div className="Home">
             <Title title="Home" />
-            <input placeholder='Enter a word...' />
-            <button>Translate</button>
+            <input placeholder='Enter a word in English...' />
+            <button>Define</button>
         </div>
     )
 }
