@@ -1,0 +1,4 @@
+/* Row content inherits .History table rules; hooks for future row states */
+.History tbody tr:hover td {
+  background: rgba(0, 0, 0, 0.03);
+}

@@ -1,0 +1,6 @@
+.NotFound {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 1.0625rem;
+  color: var(--color-muted, #71717a);
+}

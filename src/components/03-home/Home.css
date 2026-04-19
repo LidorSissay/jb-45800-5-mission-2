@@ -1,0 +1,47 @@
+.Home {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.Home input {
+  width: 100%;
+  max-width: 22rem;
+  padding: 0.5rem 0.65rem;
+  font: inherit;
+  color: inherit;
+  background: var(--color-surface, #fff);
+  border: 1px solid var(--color-border, #e4e4e7);
+  border-radius: var(--radius, 6px);
+  box-shadow: var(--shadow, 0 1px 2px rgba(0, 0, 0, 0.05));
+}
+
+.Home input:focus {
+  outline: 2px solid var(--color-muted, #71717a);
+  outline-offset: 2px;
+}
+
+.Home input::placeholder {
+  color: var(--color-muted, #71717a);
+}
+
+.Home button {
+  align-self: flex-start;
+  padding: 0.5rem 1rem;
+  font: inherit;
+  font-weight: 500;
+  color: var(--color-surface, #fff);
+  background: var(--color-accent, #18181b);
+  border: 1px solid var(--color-accent, #18181b);
+  border-radius: var(--radius, 6px);
+  cursor: pointer;
+}
+
+.Home button:hover {
+  opacity: 0.92;
+}
+
+.Home button:focus-visible {
+  outline: 2px solid var(--color-muted, #71717a);
+  outline-offset: 2px;
+}
