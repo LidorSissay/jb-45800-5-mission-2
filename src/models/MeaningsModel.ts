@@ -2,5 +2,5 @@ import type DefinitionsModel from "./DefinitionsModel";
 
 export default interface MeaningsModel {
     partOfSpeech: string
-    meanings: DefinitionsModel[]
+    definitions: DefinitionsModel[]
 }
